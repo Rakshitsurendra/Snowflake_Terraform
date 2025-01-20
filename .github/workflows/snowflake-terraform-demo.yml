@@ -16,8 +16,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
         with:
-          cli_config_credentials_token: ${{ secrets.Snowflake_Terraform_Access_Token 
- }}
+          cli_config_credentials_token: ${{ secrets.Snowflake_Terraform_Access_Token }}
 
       - name: Terraform Format
         id: fmt
